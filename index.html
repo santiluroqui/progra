@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Zara</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">Zara</div>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="#home">Inicio</a></li>
+            <li><a href="#productos">Productos</a></li>
+            <li><a href="#novedades">Novedades</a></li>
+            <li><a href="#testimonios">Testimonios</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <div class="hero-content fade-in">
+        <h1 class="hero-title">Bienvenido a Zara</h1>
+        <p>Descubre las últimas tendencias en moda.</p>
+        <button class="btn">Explorar Colección</button>
+    </div>
+</section>
+
+<section class="productos" id="productos">
+    <h2 class="fade-in">Nuestra Colección</h2>
+    <div class="productos-grid">
+        <div class="producto fade-in">
+            <img src="https://vader-prod.s3.amazonaws.com/1660038213-camisa-crochet-1660038185.jpg" alt="Camisa" class="producto-img">
+            <h3>Camisa</h3>
+            <button class="btn ver-mas" data-producto="camisa">Ver Más</button>
+        </div>
+        <div class="producto fade-in">
+            <img src="https://static.zara.net/assets/public/816b/94af/3a264b89ac88/946e477568b9/04060597400-e1/04060597400-e1.jpg?ts=1739189564807" alt="Jeans" class="producto-img">
+            <h3>Jeans</h3>
+            <button class="btn ver-mas" data-producto="jeans">Ver Más</button>
+        </div>
+        <div class="producto fade-in">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6-00s100cuFmH7mJMhnDq84EfQtQnu6yTJQ&s" alt="Pantalones Cargo" class="producto-img">
+            <h3>Pantalones Cargo</h3>
+            <button class="btn ver-mas" data-producto="pantalones-cargo">Ver Más</button>
+        </div>
+        <div class="producto fade-in">
+            <img src="https://static.zara.net/assets/public/d4e2/9898/297449398073/206266f73e33/04302401800-e1/04302401800-e1.jpg?ts=1736354867813" alt="Chaqueta" class="producto-img">
+            <h3>Chaqueta</h3>
+            <button class="btn ver-mas" data-producto="chaqueta">Ver Más</button>
+        </div>
+        <div class="producto fade-in">
+            <img src="https://vader-prod.s3.amazonaws.com/1700138690-abrigo-marinero-65560e53a4167.jpg" alt="Abrigo" class="producto-img">
+            <h3>Abrigo</h3>
+            <button class="btn ver-mas" data-producto="abrigo">Ver Más</button>
+        </div>
+        <div class="producto fade-in">
+            <img src="https://static.zara.net/assets/public/fb87/7988/efe44fefae49/7b145172fc54/04299333716-e1/04299333716-e1.jpg?ts=1738327950943&w=352&f=auto" alt="Blazer" class="producto-img">
+            <h3>Blazer</h3>
+            <button class="btn ver-mas" data-producto="blazer">Ver Más</button>
+        </div>
+        <div class="producto fade-in">
+            <img src="https://static1.mujerhoy.com/www/multimedia/202401/03/media/cortadas/abrigo-zara-borreguito-kkUH--650x900@MujerHoy.jpg" alt="Abrigo de Lana" class="producto-img">
+            <h3>Abrigo de Lana</h3>
+            <button class="btn ver-mas" data-producto="abrigo-lana">Ver Más</button>
+        </div>
+        <div class="producto fade-in">
+            <img src="https://static.zara.net/assets/public/fe76/4a45/19944bc397e6/5992babcb69a/12018420114-e1/12018420114-e1.jpg?ts=1723024684646" alt="Botines" class="producto-img">
+            <h3>Botines</h3>
+            <button class="btn ver-mas" data-producto="botines">Ver Más</button>
+        </div>
+    </div>
+</section>
+
+<section class="galeria-modelos">
+    <h2 class="fade-in">Modelos Destacados</h2>
+    <div class="carousel">
+        <button class="flecha izquierda" onclick="cambiarImagen(-1)">&#10094;</button>
+        <img src="https://hips.hearstapps.com/hmg-prod/images/191207-zara-04-018-06-qc-1587046860.jpg" alt="Modelo 1" class="fade-in" id="imagen-carousel">
+        <button class="flecha derecha" onclick="cambiarImagen(1)">&#10095;</button>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2025 Zara. Todos los derechos reservados.</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
